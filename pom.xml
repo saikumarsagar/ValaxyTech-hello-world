@@ -22,11 +22,10 @@
   </modules>
 
   <distributionManagement>
-    <site>
-      <id>site-server</id>
-      <name>Test Project Site</name>
-      <url>file:///tmp/maven-project-site</url>
-    </site>
+   <repository>
+    <id>releases</id>
+    <url>http://13.233.160.152:8081/nexus/content/repositories/releases</url>
+   </repository>
   </distributionManagement>
 
   <build>
@@ -216,12 +215,5 @@
   <prerequisites>
     <maven>3.0.3</maven>
   </prerequisites>
-
-    <distributionManagement>
-  <repository>
-    <id>releases</id>
-    <url>http://13.233.160.152:8081/nexus/content/repositories/releases</url>
-  </repository>
-</distributionManagement> 
-         
+          
 </project>
